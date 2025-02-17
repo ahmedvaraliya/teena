@@ -1,0 +1,267 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  line-height: 50px;
+}
+
+header {
+  background-color: #2c3e50;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+header h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  background-color: #34495e;
+  padding: 10px 0;
+}
+
+nav ul li {
+  margin: 0 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+section {
+  padding: 40px;
+  text-align: center;
+}
+
+.product {
+  display: inline-block;
+  /* background-color: white; */
+  margin: 20px;
+  /* padding: 20px; */
+  /* border-radius: 8px; */
+  /* box-shadow: 0 4px 8px rgba(0,0,0,0.1); */
+  text-align: center;
+  /* width: 250px; */
+  position: relative;
+  background-color: #2c3e50;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 8px;
+box-shadow:0px 0px 4px 4px #2c3e50;
+width: 275px;
+}
+
+.product img {
+  width: 100%;
+  height: 200px;
+  background-color: #ffffff;
+  border-radius: 8px;
+}
+
+.product h3 {
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+
+.product p {
+  font-size: 1.2rem;
+  color: #fff;
+  margin: 5px 0;
+}
+
+.product button {
+  background-color: #2980b9 ;
+  color: white;
+  border: none;
+  padding: 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.product button:hover {
+  border: 3px solid #3498db;
+  color: #007bff;
+  background-color: #fff;
+}
+
+.product a {
+
+  text-decoration: none; 
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+  color: #007bff;
+}
+.product a:hover {
+  text-decoration: underline;
+}
+
+.gallery-images img {
+  height: 250px;
+  width: 250px;
+  border-radius: 10px;
+ margin: 20px;
+}
+
+
+
+footer {
+  background-color: #2c3e50;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+#branches {
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+
+#branches h2 {
+  text-align: center;
+  font-size: 24px;
+}
+
+.branch {
+  margin: 10px 0;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.branch h3 {
+  font-size: 20px;
+  color: #333;
+}
+
+.branch p {
+  font-size: 16px;
+  color: #555;
+}
+.branch-timings ul li  {
+  list-style: none;
+}
+
+.add-to-wishlist {
+  background-color: #ff5252;
+}
+
+.add-to-wishlist:hover {
+  background-color: #ff4444;
+}
+.wishlist-icon {
+font-size: 24px;
+color: #9e9e9e;
+width: 30px;
+height: 30px;
+border-radius: 50%;
+text-align: center;
+line-height: 38px;
+cursor: pointer;
+position: absolute;
+top: 8px;
+right: 0px;
+transition: color 0.3s, border-color 0.3s;
+      }
+      #cart-modal {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+        display: none;
+        padding: 20px;
+    }
+    
+    #cart-items {
+        background-color: #fff;
+        padding: 10px;
+        max-width: 500px;
+        margin: auto;
+    }
+    
+    .cart-item {
+        margin-bottom: 10px;
+    }
+    
+@media screen and (min-width:0px) and (max-width:768px) {
+  nav ul {
+    list-style-type: none;
+    display: grid
+;
+    justify-content: center;
+    background-color: #34495e;
+    padding: 10px 0px;
+    line-height: 38px;
+}
+  section {
+    /* padding: 40px; */
+    padding: 0px;
+    /* padding: 15px; */
+    text-align: center;
+}
+.gallery-images img {
+display: grid;
+  height: 250px;
+  width: 250px;
+  border-radius: 10px;
+  padding: 0px;
+  margin-left: -5px;
+}
+.view-cart {
+  /* width: 99%; */
+    text-align: center;
+    /* margin: 1px; */
+    padding: 12px 20px;
+    background-color: #0084ff;
+    color: white;
+    border: none;
+    /* border-radius: 8px; */
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+}
+.wishlist-icon {
+  font-size: 28px;
+  cursor: pointer;
+  /* color: #ddd; */
+  transition: color 0.3sease;
+}
+
+.wishlist-icon {
+  font-size: 24px;
+  /* color: #9e9e9e; */
+
+  color: #f09e9e !important;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 38px;
+  cursor: pointer;
+  position: absolute;
+  top: -37px;
+  right: 115px;
+  transition: color 0.3s, border-color 0.3s;
+}
+}
